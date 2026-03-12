@@ -19,3 +19,4 @@ $content = ob_get_clean();
 //include __DIR__ . "templates/_layout.html.php";
 include_once "templates/_layout.html.php";
 
+// adding some comment in here
