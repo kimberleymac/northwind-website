@@ -1,6 +1,6 @@
 # Northwind Website for in-class PHP testing
 
-This is a website sused as an in-class demonstration to teach PHP programming techniques as we move througout the course content.
+This is a website used as an in-class demonstration to teach PHP programming techniques as we move througout the course content.
 
 ## Stealing this code
 
@@ -8,7 +8,7 @@ If you're in the course and are wanting to "gain inspiration" from this code you
 
 1. Download the entire repo as a ZIP file
 2. View and download individual files of the repo (good to grab a single change)
-3. Clon eht entire erpor to your computer using `git clone url` from the directory where you wnat to download to.
+3. Clone the entire repo to your computer using `git clone url` from the directory where you want to download to.
 
 ## Sample Markdoen
 
