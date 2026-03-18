@@ -26,7 +26,7 @@
 </main>
 
 <footer class="site-footer">
-<p class="copyright">Copyright 2026 Northwind</p>
+<p class="copyright">Copyright &copy;<?= date('Y') ?> Northwind</p>
 </footer>
 
 </div>
