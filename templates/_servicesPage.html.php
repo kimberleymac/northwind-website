@@ -7,12 +7,12 @@
      <p>Sorry no serivices available</p>
 
 <?php else: ?>
-
+<!-- htmlspecialchars used to sanitise, for untrust worthy input etc-->
     <dl class="service-list">
         <!-- Start of loop -->
         <?php foreach($services as $serviceName => $serviceDescription): ?>
-        <dt><?= $serviceName ?></dt>
-        <dd><?= $serviceDescription ?></dd>
+        <dt><?= htmlspecialchars($serviceName) ?></dt>
+        <dd><?= htmlspecialchars($serviceDescription) ?></dd>
         <?php endforeach ?>
         <!-- End of loop -->
     </dl>
