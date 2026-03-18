@@ -57,3 +57,37 @@ body {
     font-size: italic;
     text-align: center;
 }
+
+/* Services listing */
+
+.service-list{
+    display: grid;
+    grid-template-columns: 5em 1fr;
+    grid-template-rows: auto;
+    row-gap: 0.2em;
+}
+
+.service-list dt{
+    background-color: navy;
+    color: white;
+}
+
+.service-list > *{ /*everything inside service list*/
+    padding: 0.3em 0.6em;
+}
+
+.service-list dd{
+    margin: 0;
+}
+
+
+/* Simple version
+.service-list dt{
+    margin:2em 0 0.5em;
+    border-bottom: 1px solid lightblue;
+    font-weight: bold;
+}
+
+.service-list dd {
+    margin-left: 1em;
+} */
