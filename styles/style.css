@@ -10,6 +10,17 @@ body {
 
 }
 
+a {
+    text-decoration: none;
+    color: navy;
+}
+
+a:hover,
+a:focus{
+    text-decoration: underline;
+    color: lightblue;
+}
+
 .site-wrapper{
     max-width: 800px;
     margin: 10px auto;
@@ -32,11 +43,40 @@ body {
 
 }
 
-.main-nav-container{
+.main-nav-container{}
+
+.main-nav{}
+
+.main-nav > ul{
+display: flex;
+justify-content: center;
+margin: 0;
+padding: 0;
+list-style-type: none;
+}
+
+.main-nav > ul > li > a{
+    /* only for the top level of the nav not the ones further down */
+    display: inline-block;
+    background-color: navy;
+    /* flex-wrap is not ON by default */
+    flex-wrap: wrap;
+    color: white;
+    /* Go for a 1 to 2 (or 3) ratio for asthetic look */
+    padding: 0.4em 0.8em; 
+    /* Golden ratio is 1.618 */    
 
 }
 
-.main-nav{
+.main-nav > ul > li > a:is(:hover, :focus){
+    background-color: lightblue;
+    color: white;
+    text-decoration: none;
+}
+
+.main-nav > ul > li.active > a{
+    border-bottom: 1px solid orange;
+    color: white;
 
 }
 
@@ -62,7 +102,7 @@ body {
 
 .service-list{
     display: grid;
-    grid-template-columns: 5em 1fr;
+    grid-template-columns: 8em 1fr;
     grid-template-rows: auto;
     row-gap: 0.2em;
 }
