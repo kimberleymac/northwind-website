@@ -13,6 +13,7 @@
                 <div class="main-nav-container">
                     <nav class="main-nav">
                         <!-- Links go here -->
+                         <?php include "_navigation.html.php"; ?>
                     </nav>
                 </div>
             
