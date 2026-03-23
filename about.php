@@ -1,5 +1,9 @@
 <?php
 //Setup for the page
+
+// Common includes for main PHP pages (controllers)
+require_once "includes/common.php";
+
 //Config
 $title = "About our company";
 
