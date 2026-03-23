@@ -6,6 +6,8 @@ $navLinks = [
     "about.php" => "About us",
     "services.php" => "Our services",
     "contact.php" => "Contact",
+    "register.php" => "Register",
+
 ];
 // Get the currenlty-loaded page (PHP script), e.g. index.php
 $currentPage = basename($_SERVER["SCRIPT_NAME"]);
