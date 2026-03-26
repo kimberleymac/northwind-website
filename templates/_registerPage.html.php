@@ -1,17 +1,20 @@
+<?php
+//Reference and Includes
+
+//require_once __DIR__ . "/../includes/formHelpers.php";
+
+require_once INCLUDES_DIR . "formHelpers.php";
+
+?>
+
 <h2> Register</h2>
 
 <p>Fill out the registration form to receive great things.</p>
 
-<!-- Error summary ($errors) -->
-<?php if (!empty($errors)): ?>
-    <div class="error-summary">
-        <ul>
-            <?php foreach ($errors as $error):  ?>
-                <li><?= $error ?></li>
-            <?php endforeach; ?>
-        </ul>
-    </div>
-<?php endif; ?>
+<?php 
+//
+include "templates/_errorSummary.html.php"; 
+?>
 
 <!-- Could use a dynamic option like /echo basename([SERVER_THING] in action) -->
 <form action="register.php" method="post">
@@ -20,19 +23,19 @@
 
         <div class="form-row">
             <label for="">First name:</label>
-            <input type="text" id="firstName" name="firstName" required>
+            <input type="text" id="firstName" name="firstName" required <?= fieldValue("firstName")?>>
         </div>
         <div class="form-row">
             <label for="">Last name:</label>
-            <input type="text" id="lastName" name="lastName" required>
+            <input type="text" id="lastName" name="lastName" required <?= fieldValue("lastName")?>>
             <!-- Would be a good idea to generate a function so that you wouldn't need to copy and paste the code -->
-            <?php if($errors["lastName"]): ?>
+            <?php if(isset($errors["lastName"])): ?>
                 <span class="error-message"><?= $errors["lastName"] ?></span>
                 <?php endif ?>
         </div>
         <div class="form-row">
             <label for="">Email: </label>
-            <input type="email" id="email" name="email" placeholder="name@email.com.au" required>
+            <input type="email" id="email" name="email" placeholder="name@email.com.au" required <?= fieldValue("email")?>>
         </div>
         <div class="form-row">
             <label for="">Password: </label>
